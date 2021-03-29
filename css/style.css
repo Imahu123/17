@@ -1,0 +1,360 @@
+@font-face 
+{
+    font-family: 'gotham';
+    src: url('../Gotham-Medium.otf') format('truetype');
+}
+html,body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'gotham';
+	
+}
+
+.div_background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 700px;
+	width: 100%;
+	/*background: url('images/bg_gif.gif');*/
+	background: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+}
+.vegas-slide-inner
+{
+	background-size: 100% 100%!important;
+    background-repeat: no-repeat!important;
+}
+
+.main_content
+{
+	overflow: hidden;
+	position: relative;
+	height: auto;
+	display: inline-block;
+	width: 100%;
+}
+
+.main_content .box_cover
+{
+	/*
+	overflow: hidden;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    /*
+    transform: translate(-50%, -50%);
+    */
+    position: relative;
+    text-align: center;
+}
+.main_content .box_cover img.coming_soon
+{
+	width: 947px;
+	height: 710px;
+}
+.main_content .box_cover
+{
+	padding: 50px 0;
+}
+.main_content .box_cover img.maps,
+.main_content .box_cover img.wording
+{
+	max-width: 100%;
+	margin: 0 auto;
+}
+.main_content .box_cover img.wording
+{
+	vertical-align: top;
+}
+
+.footer
+{
+	background: #fff;
+	width: 100%;
+	text-align: center;
+	padding: 25px 0;
+}
+.footer p
+{
+	font-size: 10px;
+	letter-spacing: 3px;
+	font-weight: 300;
+}
+
+.footer ul
+{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin: 0 auto;
+	list-style: none;
+}
+.footer ul li
+{
+	float: left;
+	margin:5px;
+}
+.footer ul li img
+{
+	width: 18px;
+}
+
+
+
+/* ----------- Large Desktop ----------- */
+@media screen and (min-width: 1900px) 
+{
+  	.main_content,.div_background,.main_content
+	{
+		/*height: 900px;*/
+	}
+	.main_content .box_cover img.coming_soon
+	{
+		width: 1200px;
+		height: auto;
+	}
+	.main_content .box_cover img.maps
+	{
+		max-width: 100%;
+	}
+	.main_content .box_cover img.wording.vertical
+	{
+		max-height: 500px;
+	}
+
+	.footer p
+	{
+		font-size: 16px;
+	}
+
+	.footer ul li img
+	{
+		width: 25px;
+	}
+
+}
+
+
+/* ----------- Laptop ----------- */
+
+@media screen and (min-width: 1440px) and (max-width: 1850px) 
+{
+	.main_content,.div_background,.main_content
+	{
+		/*height: 900px;*/
+	}
+	.main_content .box_cover img.coming_soon
+	{
+		width: 1200px;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1400px) 
+{
+	.main_content .box_cover img.maps
+	{
+		max-width: 800px;
+	}
+	.main_content .box_cover img.wording.vertical
+	{
+		max-height: 300px;
+	}
+}
+
+
+@media screen and (min-width: 1025px)  and (max-width: 1280px)
+{
+	
+}
+
+
+/* ----------- iPad mini ----------- */
+/* Portrait and Landscape */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+	.main_content .box_cover img.wording.vertical
+	{
+		display: none!important;
+	}
+	.main_content .box_cover img.wording.horizontal
+	{
+		display: block!important;
+		max-width: 400px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) 
+{
+	.main_content,.div_background,.main_content
+	{
+		/*height: 1100px;*/
+	}
+	.main_content .box_cover img.coming_soon
+	{
+		width: 100%;
+		height: auto;
+	}
+
+	.main_content .box_cover img.maps
+	{
+		max-width: 1000px;
+	}
+
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) 
+{
+	
+}
+
+/* ----------- Android Hp ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-width: 681px) and (max-width: 767px)
+{
+	
+
+}
+@media only screen and (min-width: 681px) and (max-width: 767px) and (orientation: landscape) 
+{
+	.main_content .box_cover
+	{
+		padding: 20px 0;
+	}
+	.main_content .box_cover img.wording.horizontal
+	{
+		max-width: 350px;
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+
+
+}
+@media only screen and (min-width: 481px) and (max-width: 680px)
+{
+	
+}
+
+@media only screen and (min-width : 375px) and (max-width : 667px)
+{
+	/*iPhone 6, 7, & 8*/
+	
+	.div_background,.main_content
+	{
+		/*height: 650px;*/
+	}
+	.main_content .box_cover img.coming_soon
+	{
+		width: 200%;
+		margin-left: -47%;
+		height: auto;
+	}
+
+	.main_content .box_cover
+	{
+		padding:10px 0;	
+	}
+	.main_content .box_cover img.maps
+	{
+		margin-left: -47%;
+		max-width: 700px;
+	}
+	.main_content .box_cover img.wording.horizontal
+	{
+		max-width: 250px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation: landscape) 
+{
+	.main_content .box_cover img.maps
+	{
+		margin-left: 0%;
+		max-width: 100%;
+	}
+	
+
+}
+
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) 
+{
+	/*iPhone X in portrait & landscape*/
+	
+	
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px)
+{
+	.main_content .box_cover
+	{
+		padding: 10px 0;
+	}
+	.div_background,.main_content
+	{
+		/*height: 650px;*/
+	}
+	.main_content .box_cover img.coming_soon
+	{
+		width: 150%;
+		margin-left: -25%;
+		height: auto;
+	}
+
+	.main_content .box_cover img.wording.vertical
+	{
+		display: none;
+	}
+
+	.main_content .box_cover img.maps
+	{
+		margin-left: 0;
+		max-width: 100%;
+		padding: 0;
+	}
+	.main_content .box_cover img.wording
+	{
+		margin-left: 0;
+		max-width: 250px;
+		margin-bottom: 10px;
+	}
+
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) 
+{
+	
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) 
+{	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
